@@ -1,0 +1,11 @@
+python3 -m sglang.bench_serving \
+	--backend sglang \
+	--dataset-name random \
+	--max-concurrency 2048 \
+	--num-prompts 2048 \
+	--random-input 300 \
+	--random-output 20 \
+	--host 192.168.0.60 \
+	--port 6699 \
+	--random-range-ratio 1 \
+	--model /data/ascend-ci-share-pkking-sglang/modelscope/hub/models/vllm-ascend/DeepSeek-R1-0528-W8A8 
