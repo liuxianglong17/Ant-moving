@@ -240,6 +240,18 @@ test_npu_deepep_auto_qwen3_next.py	https://github.com/Ascend/sglang/issues/58	ni
  6. test_ascend_minimax_m2.py
  7. test_npu_qwen3_235b_a22b_w8a8.py
 
+ 模型config文件问题：
+ 1. test_npu_original_logprobs.py
+ 2. test_npu_phi_4_multimodal_llm.py
+ 3. test_npu_bge_reranker_v2_m3.py
+ 4. test_npu_phi4_multimodal_instruct.py
+ 5. test_ascend_dbrx_instruct.py
+加载权重超时
+ 6. test_ascend_minimax_m2.py
+ 精度不足 0.94 < 0.955
+ 7. test_npu_qwen3_235b_a22b_w8a8.py
+
+
 [List] 全部跳过用例清单：
  1.	test_load_weights_from_remote_instance_npu.py	run failed	nightly-1-(0)
  2.	test_npu_fim_completion.py	run failed	nightly-1-(0)
