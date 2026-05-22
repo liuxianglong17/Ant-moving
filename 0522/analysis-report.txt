@@ -1,0 +1,161 @@
+================================================================================
+[Analysis] GitHub Actions 测试日志分析报告
+================================================================================
+分析目录: D:\personal_code\My-agent-assistant\local_data\temp
+分析时间: 2026-05-22 15:15:38
+================================================================================
+
+[File] 文件：nightly-1-npu-a3 (0).txt
+[Result] 结果：13/16 passed
+------------------------------------------------------------
+[OK] PASSED：
+  test_npu_hicache_mha.py
+  test_npu_hierarchical_cache_mutually_exclusive.py
+  test_npu_sampling_backend.py
+  test_npu_compile_graph_tp1_bf16.py
+  test_npu_piecewise_graph_prefill.py
+  test_npu_autoround_moe.py
+  test_npu_w8a8_quantization.py
+  test_npu_eagle3.py
+  test_npu_api_encode.py
+  test_npu_penalty.py
+  test_npu_chatglm2_6b.py
+  test_npu_glm4_9b_chat.py
+  test_npu_llama_2_7b.py
+
+[FAIL] FAILED：
+  test_npu_original_logprobs.py
+  test_npu_phi_4_multimodal_llm.py
+  test_npu_bge_reranker_v2_m3.py
+================================================================================
+
+[File] 文件：nightly-1-npu-a3 (1).txt
+[Result] 结果：16/16 passed
+------------------------------------------------------------
+[OK] PASSED：
+  test_npu_hierarchical_cache.py
+  test_npu_radix_cache.py
+  test_npu_llada2_mini.py
+  test_npu_graph_tp1_bf16.py
+  test_npu_log_level.py
+  test_npu_autoround_dense.py
+  test_npu_gptq_moe.py
+  test_npu_tp1_bf16.py
+  test_npu_api_abort_request.py
+  test_npu_matched_stop.py
+  test_npu_baichuan2_13b_chat.py
+  test_npu_gemma_3_4b_it_llm.py
+  test_npu_internlm2_7b.py
+  test_npu_mistral_7b.py
+  test_npu_qwen3_0_6b.py
+  test_npu_gguf.py
+
+[FAIL] FAILED：
+================================================================================
+
+[File] 文件：nightly-16-npu-a3 (0).txt
+[Result] 结果：3/3 passed
+------------------------------------------------------------
+[OK] PASSED：
+  test_npu_deepep.py
+  test_npu_deepseek_v3_2_exp_w8a8.py
+  test_npu_qwen3_vl_235b_a22b_instruct.py
+
+[FAIL] FAILED：
+================================================================================
+
+[File] 文件：nightly-16-npu-a3 (1).txt
+[Result] 结果：3/3 passed
+------------------------------------------------------------
+[OK] PASSED：
+  test_npu_deepep_auto_deepseek_v3_2_w8a8.py
+  test_npu_qwen3_coder_480b_a35b.py
+  test_npu_deepep_auto_qwen3_480b.py
+
+[FAIL] FAILED：
+================================================================================
+
+[File] 文件：nightly-2-npu-a3 (0).txt
+[Result] 结果：11/11 passed
+------------------------------------------------------------
+[OK] PASSED：
+  test_npu_offload_modes.py
+  test_npu_gguf_moe.py
+  test_npu_graph_tp2_bf16.py
+  test_npu_mla_fia_w8a8int8.py
+  test_npu_tp2_bf16.py
+  test_npu_tp2_fia_bf16.py
+  test_npu_openai_server_ignore_eos.py
+  test_ascend_trinity_mini.py
+  test_npu_qwen3_30b.py
+  test_npu_qwq_32b_w8a8.py
+  test_npu_memory_consumption.py
+
+[FAIL] FAILED：
+================================================================================
+
+[File] 文件：nightly-4-npu-a3 (0).txt
+[Result] 结果：15/16 passed
+------------------------------------------------------------
+[OK] PASSED：
+  test_npu_qwen3_30b_attn_cp.py
+  test_npu_hicache_mla.py
+  test_npu_w4a4_quantization.py
+  test_npu_mla_w8a8int8.py
+  test_npu_tp4_bf16.py
+  test_npu_qwen3_32b.py
+  test_npu_gemma_3_4b_it.py
+  test_npu_janus_pro_1b.py
+  test_npu_janus_pro_7b.py
+  test_npu_mimo_vl_7b_rl.py
+  test_npu_minicpm_v_2_6.py
+  test_npu_mistral_small_3_1_24b_instruct_2503.py
+  test_npu_qwen2_5_vl_3b_instruct.py
+  test_npu_qwen3_vl_30b_a3b_instruct.py
+  test_npu_qwen3_vl_8b_instruct.py
+
+[FAIL] FAILED：
+  test_npu_phi4_multimodal_instruct.py
+================================================================================
+
+[File] 文件：nightly-8-npu-a3 (0).txt
+[Result] 结果：2/5 passed
+------------------------------------------------------------
+[OK] PASSED：
+  test_ascend_glm_4_5v.py
+  test_npu_qwen2_5_vl_72b_instruct.py
+
+[FAIL] FAILED：
+  test_ascend_dbrx_instruct.py
+  test_ascend_minimax_m2.py
+  test_npu_qwen3_235b_a22b_w8a8.py
+================================================================================
+
+================================================================================
+[Table] 失败用例表格格式
+================================================================================
+用例名		备注		流水线名
+test_npu_original_logprobs.py			nightly-1-(0)
+test_npu_phi_4_multimodal_llm.py			nightly-1-(0)
+test_npu_bge_reranker_v2_m3.py			nightly-1-(0)
+test_npu_phi4_multimodal_instruct.py			nightly-4-(0)
+test_ascend_dbrx_instruct.py			nightly-8-(0)
+test_ascend_minimax_m2.py			nightly-8-(0)
+test_npu_qwen3_235b_a22b_w8a8.py			nightly-8-(0)
+
+================================================================================
+[Summary] 全局统计结果
+================================================================================
+总执行用例数：70
+总成功用例数：63
+总失败用例数：7
+
+[List] 全部失败用例清单：
+ 1. test_npu_original_logprobs.py
+ 2. test_npu_phi_4_multimodal_llm.py
+ 3. test_npu_bge_reranker_v2_m3.py
+ 4. test_npu_phi4_multimodal_instruct.py
+ 5. test_ascend_dbrx_instruct.py
+ 6. test_ascend_minimax_m2.py
+ 7. test_npu_qwen3_235b_a22b_w8a8.py
+================================================================================
