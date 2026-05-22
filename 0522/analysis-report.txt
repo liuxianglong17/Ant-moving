@@ -240,12 +240,14 @@ test_npu_deepep_auto_qwen3_next.py	https://github.com/Ascend/sglang/issues/58	ni
  6. test_ascend_minimax_m2.py
  7. test_npu_qwen3_235b_a22b_w8a8.py
 
- 模型config文件问题：
- 1. test_npu_original_logprobs.py
+ 模型config文件问题： `rope_scaling`多余'rope_theta': 10000.0
  2. test_npu_phi_4_multimodal_llm.py
- 3. test_npu_bge_reranker_v2_m3.py
  4. test_npu_phi4_multimodal_instruct.py
+  模型config文件问题：moe_jitter_eps严格为float
  5. test_ascend_dbrx_instruct.py
+ 清理进程超时
+ 1. test_npu_original_logprobs.py
+ 3. test_npu_bge_reranker_v2_m3.py
 加载权重超时
  6. test_ascend_minimax_m2.py
  精度不足 0.94 < 0.955
