@@ -2,7 +2,7 @@
 [Analysis] GitHub Actions 测试日志分析报告
 ================================================================================
 分析目录: D:\personal_code\My-agent-assistant\local_data\logs\2026-05-25\sgl-project-sglang-26369251634
-分析时间: 2026-05-25 10:53:21
+分析时间: 2026-05-25 11:16:57
 ================================================================================
 
 [File] 文件：nightly-1-npu-a3 (0).txt
@@ -252,15 +252,7 @@ test_npu_no_overlap_scheduler.py	run failed	nightly-1-(0)
 test_npu_no_chunked_prefill.py	run failed	nightly-1-(0)
 test_npu_fim_completion.py	run failed	nightly-1-(0)
 test_load_weights_from_remote_instance_npu.py	run failed	nightly-1-(0)
-test_npu_minicpm3_4b.py	https://github.com/Ascend/sglang/issues/23	nightly-1-(1)
-test_npu_openai_function_calling.py	https://github.com/Ascend/sglang/issues/39	nightly-1-(1)
-test_npu_llama_3_2_11b_vision_instruct.py	run failed	nightly-1-(1)
-test_npu_no_overlap_scheduler.py	run failed	nightly-1-(1)
-test_npu_no_chunked_prefill.py	run failed	nightly-1-(1)
-test_npu_fim_completion.py	run failed	nightly-1-(1)
-test_load_weights_from_remote_instance_npu.py	run failed	nightly-1-(1)
 test_npu_hierarchical_cache_mla.py	run failed	nightly-16-(0)
-test_npu_hierarchical_cache_mla.py	run failed	nightly-16-(1)
 test_npu_enable_thinking.py	https://github.com/Ascend/sglang/issues/32	nightly-2-(0)
 test_npu_hierarchical_cache_ttft_mha.py	run failed	nightly-2-(0)
 test_npu_warmups.py	run failed	nightly-4-(0)
@@ -277,7 +269,7 @@ test_npu_deepep_low_latency_qwen3_next.py	https://github.com/Ascend/sglang/issue
 总执行用例数：70
 总成功用例数：11
 总失败用例数：59
-总跳过用例数：25
+总跳过用例数：17 (去重后，原始: 25)
 
 [List] 全部失败用例清单：
  1. test_npu_sampling_backend.py
@@ -340,7 +332,7 @@ test_npu_deepep_low_latency_qwen3_next.py	https://github.com/Ascend/sglang/issue
 58. test_ascend_glm_4_5v.py
 59. test_npu_qwen2_5_vl_72b_instruct.py
 
-[List] 全部跳过用例清单：
+[List] 全部跳过用例清单（去重后）：
  1.	test_npu_minicpm3_4b.py	https://github.com/Ascend/sglang/issues/23	nightly-1-(0)
  2.	test_npu_openai_function_calling.py	https://github.com/Ascend/sglang/issues/39	nightly-1-(0)
  3.	test_npu_llama_3_2_11b_vision_instruct.py	run failed	nightly-1-(0)
@@ -348,22 +340,14 @@ test_npu_deepep_low_latency_qwen3_next.py	https://github.com/Ascend/sglang/issue
  5.	test_npu_no_chunked_prefill.py	run failed	nightly-1-(0)
  6.	test_npu_fim_completion.py	run failed	nightly-1-(0)
  7.	test_load_weights_from_remote_instance_npu.py	run failed	nightly-1-(0)
- 8.	test_npu_minicpm3_4b.py	https://github.com/Ascend/sglang/issues/23	nightly-1-(1)
- 9.	test_npu_openai_function_calling.py	https://github.com/Ascend/sglang/issues/39	nightly-1-(1)
-10.	test_npu_llama_3_2_11b_vision_instruct.py	run failed	nightly-1-(1)
-11.	test_npu_no_overlap_scheduler.py	run failed	nightly-1-(1)
-12.	test_npu_no_chunked_prefill.py	run failed	nightly-1-(1)
-13.	test_npu_fim_completion.py	run failed	nightly-1-(1)
-14.	test_load_weights_from_remote_instance_npu.py	run failed	nightly-1-(1)
-15.	test_npu_hierarchical_cache_mla.py	run failed	nightly-16-(0)
-16.	test_npu_hierarchical_cache_mla.py	run failed	nightly-16-(1)
-17.	test_npu_enable_thinking.py	https://github.com/Ascend/sglang/issues/32	nightly-2-(0)
-18.	test_npu_hierarchical_cache_ttft_mha.py	run failed	nightly-2-(0)
-19.	test_npu_warmups.py	run failed	nightly-4-(0)
-20.	test_npu_deepseek_vl2.py	run failed	nightly-4-(0)
-21.	test_npu_minicpm_o_2_6.py	run failed	nightly-4-(0)
-22.	test_npu_kimi_vl_a3b_instruct.py	run failed	nightly-4-(0)
-23.	test_npu_llama4_scount_17b_16e.py	https://github.com/Ascend/sglang/issues/25	nightly-4-(0)
-24.	test_npu_deepep_auto_qwen3_next.py	https://github.com/Ascend/sglang/issues/58	nightly-8-(0)
-25.	test_npu_deepep_low_latency_qwen3_next.py	https://github.com/Ascend/sglang/issues/58	nightly-8-(0)
+ 8.	test_npu_hierarchical_cache_mla.py	run failed	nightly-16-(0)
+ 9.	test_npu_enable_thinking.py	https://github.com/Ascend/sglang/issues/32	nightly-2-(0)
+10.	test_npu_hierarchical_cache_ttft_mha.py	run failed	nightly-2-(0)
+11.	test_npu_warmups.py	run failed	nightly-4-(0)
+12.	test_npu_deepseek_vl2.py	run failed	nightly-4-(0)
+13.	test_npu_minicpm_o_2_6.py	run failed	nightly-4-(0)
+14.	test_npu_kimi_vl_a3b_instruct.py	run failed	nightly-4-(0)
+15.	test_npu_llama4_scount_17b_16e.py	https://github.com/Ascend/sglang/issues/25	nightly-4-(0)
+16.	test_npu_deepep_auto_qwen3_next.py	https://github.com/Ascend/sglang/issues/58	nightly-8-(0)
+17.	test_npu_deepep_low_latency_qwen3_next.py	https://github.com/Ascend/sglang/issues/58	nightly-8-(0)
 ================================================================================
