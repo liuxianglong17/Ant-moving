@@ -1,0 +1,533 @@
+﻿[
+    {
+        "JobName":  "nightly-1-npu-a3 (0)",
+        "TestName":  "sampling_backend",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/backends/test_npu_sampling_backend.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (0)",
+        "TestName":  "piecewise_graph_prefill",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/optimization_debug/test_npu_piecewise_graph_prefill.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (0)",
+        "TestName":  "original_logprobs",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/parameter/test_npu_original_logprobs.py",
+        "ErrorType":  "RuntimeError",
+        "ErrorCode":  "",
+        "OriginalError":  "kill_process_tree: 98 process(es) not reaped within 60s after SIGKILL; pids=[23483, 23495, 25076, 23465, 25446, 25054, 23485, 25026, 25365, 25046, 25348, 23497, 25334, 25056, 25044, 25357, 25361, 25346, 25070, 23499, 24950, 25048, 25336, 25324, 23479, 25363, 25030, 25367, 23451, 23491, 25450, 25350, 23471, 25432, 23481, 25024, 23469, 25440, 25352, 25022, 25242, 25072, 23437, 25042, 25062, 23473, 23445, 23455, 25034, 25052, 25434, 25340, 25016, 25344, 23487, 23447, 25078, 25066, 25036, 23467, 25332, 25436, 25444, 23439, 23489, 23459, 25064, 23449, 25068, 25028, 23457, 23477, 25438, 25020, 25448, 23441, 25359, 25018, 25038, 23461, 25338, 25326, 23443, 25058, 25040, 25330, 25442, 25354, 25050, 25060, 25328, 25074, 25032, 23493, 23453, 23475, 23463, 25342]",
+        "ErrorDetail":  "kill_process_tree: 98 process(es) not reaped within 60s after SIGKILL; pids=[23483, 23495, 25076, 23465, 25446, 25054, 23485, 25026, 25365, 25046, 25348, 23497, 25334, 25056, 25044, 25357, 25361, 25346, 25070, 23499, 24950, 25048, 25336, 25324, 23479, 25363, 25030, 25367, 23451, 23491, 25450, 25350, 23471, 25432, 23481, 25024, 23469, 25440, 25352, 25022, 25242, 25072, 23437, 25042, 25062, 23473, 23445, 23455, 25034, 25052, 25434, 25340, 25016, 25344, 23487, 23447, 25078, 25066, 25036, 23467, 25332, 25436, 25444, 23439, 23489, 23459, 25064, 23449, 25068, 25028, 23457, 23477, 25438, 25020, 25448, 23441, 25359, 25018, 25038, 23461, 25338, 25326, 23443, 25058, 25040, 25330, 25442, 25354, 25050, 25060, 25328, 25074, 25032, 23493, 23453, 23475, 23463, 25342]"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (0)",
+        "TestName":  "autoround_moe",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/quant/test_npu_autoround_moe.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (0)",
+        "TestName":  "w8a8_quantization",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/quant/test_npu_w8a8_quantization.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (0)",
+        "TestName":  "eagle3",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/speculative_inference/test_npu_eagle3.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (0)",
+        "TestName":  "penalty",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/interface/test_npu_penalty.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (0)",
+        "TestName":  "chatglm2_6b",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_chatglm2_6b.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (0)",
+        "TestName":  "glm4_9b_chat",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_glm4_9b_chat.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (0)",
+        "TestName":  "llama_2_7b",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_llama_2_7b.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (0)",
+        "TestName":  "phi_4_multimodal_llm",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_phi_4_multimodal_llm.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "1",
+        "OriginalError":  "Server process exited with code 1",
+        "ErrorDetail":  "Server process exited with code 1"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (0)",
+        "TestName":  "bge_reranker_v2_m3",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/rerank_models/test_npu_bge_reranker_v2_m3.py",
+        "ErrorType":  "RuntimeError",
+        "ErrorCode":  "",
+        "OriginalError":  "kill_process_tree: 66 process(es) not reaped within 60s after SIGKILL; pids=[45208, 44924, 44906, 45226, 45200, 44914, 44878, 44888, 45244, 44910, 45230, 45246, 44926, 45212, 44936, 44900, 45186, 45224, 45204, 44896, 44912, 44876, 44886, 45198, 45228, 45216, 44932, 44930, 45190, 44898, 45218, 45234, 45242, 45202, 44916, 44880, 44890, 45192, 45206, 45220, 44938, 44908, 44882, 45194, 45210, 44934, 45099, 45236, 44894, 45232, 44884, 45184, 45214, 44920, 45240, 44918, 44810, 44892, 44902, 45222, 45238, 45188, 44928, 44922, 45196, 44904]",
+        "ErrorDetail":  "kill_process_tree: 66 process(es) not reaped within 60s after SIGKILL; pids=[45208, 44924, 44906, 45226, 45200, 44914, 44878, 44888, 45244, 44910, 45230, 45246, 44926, 45212, 44936, 44900, 45186, 45224, 45204, 44896, 44912, 44876, 44886, 45198, 45228, 45216, 44932, 44930, 45190, 44898, 45218, 45234, 45242, 45202, 44916, 44880, 44890, 45192, 45206, 45220, 44938, 44908, 44882, 45194, 45210, 44934, 45099, 45236, 44894, 45232, 44884, 45184, 45214, 44920, 45240, 44918, 44810, 44892, 44902, 45222, 45238, 45188, 44928, 44922, 45196, 44904]"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "radix_cache",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/HiCache/test_npu_radix_cache.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "graph_tp1_bf16",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/optimization_debug/test_npu_graph_tp1_bf16.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "log_level",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/parameter/test_npu_log_level.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "autoround_dense",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/quant/test_npu_autoround_dense.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "gptq_moe",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/quant/test_npu_gptq_moe.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "tp1_bf16",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/runtime_opts/test_npu_tp1_bf16.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "api_abort_request",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/interface/test_npu_api_abort_request.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "matched_stop",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/interface/test_npu_matched_stop.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "baichuan2_13b_chat",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_baichuan2_13b_chat.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "gemma_3_4b_it_llm",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_gemma_3_4b_it_llm.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "internlm2_7b",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_internlm2_7b.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "mistral_7b",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_mistral_7b.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "qwen3_0_6b",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_qwen3_0_6b.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-1-npu-a3 (1)",
+        "TestName":  "gguf",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/quant/test_npu_gguf.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-16-npu-a3 (0)",
+        "TestName":  "deepseek_v3_2_exp_w8a8",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_deepseek_v3_2_exp_w8a8.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-16-npu-a3 (0)",
+        "TestName":  "qwen3_vl_235b_a22b_instruct",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_npu_qwen3_vl_235b_a22b_instruct.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-16-npu-a3 (1)",
+        "TestName":  "qwen3_coder_480b_a35b",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_qwen3_coder_480b_a35b.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-16-npu-a3 (1)",
+        "TestName":  "deepep_auto_qwen3_480b",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/parallel_strategy/expert_parallelism/test_npu_deepep_auto_qwen3_480b.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-2-npu-a3 (0)",
+        "TestName":  "offload_modes",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/offloading/test_npu_offload_modes.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-2-npu-a3 (0)",
+        "TestName":  "gguf_moe",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/quant/test_npu_gguf_moe.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-2-npu-a3 (0)",
+        "TestName":  "graph_tp2_bf16",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/optimization_debug/test_npu_graph_tp2_bf16.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-2-npu-a3 (0)",
+        "TestName":  "mla_fia_w8a8int8",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/runtime_opts/test_npu_mla_fia_w8a8int8.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-2-npu-a3 (0)",
+        "TestName":  "tp2_bf16",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/runtime_opts/test_npu_tp2_bf16.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-2-npu-a3 (0)",
+        "TestName":  "tp2_fia_bf16",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/runtime_opts/test_npu_tp2_fia_bf16.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-2-npu-a3 (0)",
+        "TestName":  "openai_server_ignore_eos",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/interface/test_npu_openai_server_ignore_eos.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-2-npu-a3 (0)",
+        "TestName":  "qwen3_30b",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_qwen3_30b.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-2-npu-a3 (0)",
+        "TestName":  "qwq_32b_w8a8",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_qwq_32b_w8a8.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-2-npu-a3 (0)",
+        "TestName":  "memory_consumption",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/test_npu_memory_consumption.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "hicache_mla",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/HiCache/test_npu_hicache_mla.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "w4a4_quantization",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/quant/test_npu_w4a4_quantization.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "mla_w8a8int8",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/runtime_opts/test_npu_mla_w8a8int8.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "tp4_bf16",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/basic_function/runtime_opts/test_npu_tp4_bf16.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "qwen3_32b",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_npu_qwen3_32b.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "gemma_3_4b_it",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_npu_gemma_3_4b_it.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "janus_pro_1b",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_npu_janus_pro_1b.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "janus_pro_7b",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_npu_janus_pro_7b.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "mimo_vl_7b_rl",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_npu_mimo_vl_7b_rl.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "minicpm_v_2_6",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_npu_minicpm_v_2_6.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "mistral_small_3_1_24b_instruct_2503",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_npu_mistral_small_3_1_24b_instruct_2503.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "phi4_multimodal_instruct",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_npu_phi4_multimodal_instruct.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "1",
+        "OriginalError":  "Server process exited with code 1",
+        "ErrorDetail":  "Server process exited with code 1"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "qwen2_5_vl_3b_instruct",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_npu_qwen2_5_vl_3b_instruct.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "qwen3_vl_30b_a3b_instruct",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_npu_qwen3_vl_30b_a3b_instruct.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-4-npu-a3 (0)",
+        "TestName":  "qwen3_vl_8b_instruct",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_npu_qwen3_vl_8b_instruct.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-8-npu-a3 (0)",
+        "TestName":  "dbrx_instruct",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_ascend_dbrx_instruct.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "1",
+        "OriginalError":  "Server process exited with code 1",
+        "ErrorDetail":  "Server process exited with code 1"
+    },
+    {
+        "JobName":  "nightly-8-npu-a3 (0)",
+        "TestName":  "minimax_m2",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/llm_models/test_ascend_minimax_m2.py",
+        "ErrorType":  "AssertionError",
+        "ErrorCode":  "",
+        "OriginalError":  "Test failed for /root/.cache/modelscope/hub/models/cyankiwi/MiniMax-M2-BF16: Server failed to start within the timeout period",
+        "ErrorDetail":  "Test failed for /root/.cache/modelscope/hub/models/cyankiwi/MiniMax-M2-BF16: Server failed to start within the timeout period"
+    },
+    {
+        "JobName":  "nightly-8-npu-a3 (0)",
+        "TestName":  "glm_4_5v",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_ascend_glm_4_5v.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    },
+    {
+        "JobName":  "nightly-8-npu-a3 (0)",
+        "TestName":  "qwen2_5_vl_72b_instruct",
+        "TestPath":  "/__w/sglang/sglang/test/registered/ascend/vlm_models/test_npu_qwen2_5_vl_72b_instruct.py",
+        "ErrorType":  "ServerCrash",
+        "ErrorCode":  "-9",
+        "OriginalError":  "Server process exited with code -9",
+        "ErrorDetail":  "Server process exited with code -9"
+    }
+]
