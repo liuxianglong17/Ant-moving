@@ -1,0 +1,88 @@
+﻿ï»¿2026-05-25T19:40:25.9701223Z Current runner version: '2.334.0'
+2026-05-25T19:40:25.9725151Z ##[group]Runner Image Provisioner
+2026-05-25T19:40:25.9725985Z Hosted Compute Agent
+2026-05-25T19:40:25.9726548Z Version: 20260213.493
+2026-05-25T19:40:25.9727180Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-05-25T19:40:25.9727879Z Build Date: 2026-02-13T00:28:41Z
+2026-05-25T19:40:25.9728558Z Worker ID: {e9758970-21ae-4ac8-ac39-d0fb8e1241f9}
+2026-05-25T19:40:25.9729209Z Azure Region: westus
+2026-05-25T19:40:25.9729831Z ##[endgroup]
+2026-05-25T19:40:25.9731212Z ##[group]Operating System
+2026-05-25T19:40:25.9731860Z Ubuntu
+2026-05-25T19:40:25.9732282Z 24.04.4
+2026-05-25T19:40:25.9733073Z LTS
+2026-05-25T19:40:25.9733542Z ##[endgroup]
+2026-05-25T19:40:25.9734000Z ##[group]Runner Image
+2026-05-25T19:40:25.9734624Z Image: ubuntu-24.04
+2026-05-25T19:40:25.9735138Z Version: 20260518.149.1
+2026-05-25T19:40:25.9736392Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260518.149/images/ubuntu/Ubuntu2404-Readme.md
+2026-05-25T19:40:25.9737835Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260518.149
+2026-05-25T19:40:25.9738797Z ##[endgroup]
+2026-05-25T19:40:25.9739881Z ##[group]GITHUB_TOKEN Permissions
+2026-05-25T19:40:25.9741663Z Contents: read
+2026-05-25T19:40:25.9742307Z Metadata: read
+2026-05-25T19:40:25.9743182Z Packages: read
+2026-05-25T19:40:25.9743699Z ##[endgroup]
+2026-05-25T19:40:25.9745911Z Secret source: Actions
+2026-05-25T19:40:25.9746837Z Prepare workflow directory
+2026-05-25T19:40:26.1015848Z Prepare all required actions
+2026-05-25T19:40:26.1965017Z Complete job name: check-all-jobs
+2026-05-25T19:40:26.2813402Z ##[group]Checking docker version
+2026-05-25T19:40:26.2826687Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
+2026-05-25T19:40:26.3845642Z '1.48'
+2026-05-25T19:40:26.3857512Z Docker daemon API version: '1.48'
+2026-05-25T19:40:26.3858257Z ##[command]/usr/bin/docker version --format '{{.Client.APIVersion}}'
+2026-05-25T19:40:26.4021164Z '1.48'
+2026-05-25T19:40:26.4033727Z Docker client API version: '1.48'
+2026-05-25T19:40:26.4039038Z ##[endgroup]
+2026-05-25T19:40:26.4041826Z ##[group]Clean up resources from previous jobs
+2026-05-25T19:40:26.4047620Z ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=bb7fc9"
+2026-05-25T19:40:26.4192622Z ##[command]/usr/bin/docker network prune --force --filter "label=bb7fc9"
+2026-05-25T19:40:26.4321024Z ##[endgroup]
+2026-05-25T19:40:26.4321499Z ##[group]Create local container network
+2026-05-25T19:40:26.4331797Z ##[command]/usr/bin/docker network create --label bb7fc9 github_network_6a3a18ade08d4123be1f26f2829c7f17
+2026-05-25T19:40:26.4884590Z 1f55e2ae49ce56fe1e1ebf4e7db8c11126111608b7ebb62785ea3dc67bb830a1
+2026-05-25T19:40:26.4904119Z ##[endgroup]
+2026-05-25T19:40:26.4927897Z ##[group]Starting job container
+2026-05-25T19:40:26.4949289Z ##[command]/usr/bin/docker pull docker.m.daocloud.io/ubuntu:22.04
+2026-05-25T19:40:31.0067344Z 22.04: Pulling from ubuntu
+2026-05-25T19:40:31.8246343Z 40d16f30db40: Already exists
+2026-05-25T19:40:34.0386479Z Digest: sha256:4f838adc7181d9039ac795a7d0aba05a9bd9ecd480d294483169c5def983b64d
+2026-05-25T19:40:34.0404265Z Status: Downloaded newer image for docker.m.daocloud.io/ubuntu:22.04
+2026-05-25T19:40:34.0413053Z docker.m.daocloud.io/ubuntu:22.04
+2026-05-25T19:40:34.0494872Z ##[command]/usr/bin/docker create --name 4e8f3e49e1f5460f9dafaa1292f363e9_dockermdaocloudioubuntu2204_9a71b0 --label bb7fc9 --workdir /__w/sglang/sglang --network github_network_6a3a18ade08d4123be1f26f2829c7f17  -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work":"/__w" -v "/home/runner/actions-runner/cached/2.334.0/externals":"/__e":ro -v "/home/runner/work/_temp":"/__w/_temp" -v "/home/runner/work/_actions":"/__w/_actions" -v "/opt/hostedtoolcache":"/__t" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" docker.m.daocloud.io/ubuntu:22.04 "-f" "/dev/null"
+2026-05-25T19:40:34.1069094Z 6aa27afda19d926b02952161ca92ff6c6667f79b276eeb2ac8ad18cfbad94993
+2026-05-25T19:40:34.1090773Z ##[command]/usr/bin/docker start 6aa27afda19d926b02952161ca92ff6c6667f79b276eeb2ac8ad18cfbad94993
+2026-05-25T19:40:34.3425635Z 6aa27afda19d926b02952161ca92ff6c6667f79b276eeb2ac8ad18cfbad94993
+2026-05-25T19:40:34.3443465Z ##[command]/usr/bin/docker ps --all --filter id=6aa27afda19d926b02952161ca92ff6c6667f79b276eeb2ac8ad18cfbad94993 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+2026-05-25T19:40:34.3562717Z 6aa27afda19d926b02952161ca92ff6c6667f79b276eeb2ac8ad18cfbad94993 Up Less than a second
+2026-05-25T19:40:34.3580050Z ##[command]/usr/bin/docker inspect --format "{{range .Config.Env}}{{println .}}{{end}}" 6aa27afda19d926b02952161ca92ff6c6667f79b276eeb2ac8ad18cfbad94993
+2026-05-25T19:40:34.3700005Z HOME=/github/home
+2026-05-25T19:40:34.3700620Z GITHUB_ACTIONS=true
+2026-05-25T19:40:34.3700991Z CI=true
+2026-05-25T19:40:34.3701352Z PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2026-05-25T19:40:34.3718991Z ##[endgroup]
+2026-05-25T19:40:34.3728626Z ##[group]Waiting for all services to be ready
+2026-05-25T19:40:34.3730420Z ##[endgroup]
+2026-05-25T19:40:34.4363218Z ##[group]Run if [[ "true" == "true" ]]; then
+2026-05-25T19:40:34.4363707Z [36;1mif [[ "true" == "true" ]]; then[0m
+2026-05-25T19:40:34.4364079Z [36;1m  echo "One or more nightly test jobs failed"[0m
+2026-05-25T19:40:34.4364408Z [36;1m  exit 1[0m
+2026-05-25T19:40:34.4364642Z [36;1mfi[0m
+2026-05-25T19:40:34.4364868Z [36;1mif [[ "false" == "true" ]]; then[0m
+2026-05-25T19:40:34.4365220Z [36;1m  echo "One or more nightly test jobs were cancelled"[0m
+2026-05-25T19:40:34.4365569Z [36;1m  exit 1[0m
+2026-05-25T19:40:34.4365779Z [36;1mfi[0m
+2026-05-25T19:40:34.4366028Z [36;1mecho "All nightly test jobs passed"[0m
+2026-05-25T19:40:34.4370020Z shell: sh -e {0}
+2026-05-25T19:40:34.4370587Z ##[endgroup]
+2026-05-25T19:40:34.5103625Z /__w/_temp/464a8d24-fcc3-4faa-965c-9fb0e647acbb.sh: 1: [[: not found
+2026-05-25T19:40:34.5104552Z All nightly test jobs passed
+2026-05-25T19:40:34.5105353Z /__w/_temp/464a8d24-fcc3-4faa-965c-9fb0e647acbb.sh: 5: [[: not found
+2026-05-25T19:40:34.5292187Z Stop and remove container: 4e8f3e49e1f5460f9dafaa1292f363e9_dockermdaocloudioubuntu2204_9a71b0
+2026-05-25T19:40:34.5297083Z ##[command]/usr/bin/docker rm --force 6aa27afda19d926b02952161ca92ff6c6667f79b276eeb2ac8ad18cfbad94993
+2026-05-25T19:40:34.6163030Z 6aa27afda19d926b02952161ca92ff6c6667f79b276eeb2ac8ad18cfbad94993
+2026-05-25T19:40:34.6190193Z Remove container network: github_network_6a3a18ade08d4123be1f26f2829c7f17
+2026-05-25T19:40:34.6195447Z ##[command]/usr/bin/docker network rm github_network_6a3a18ade08d4123be1f26f2829c7f17
+2026-05-25T19:40:34.7208879Z github_network_6a3a18ade08d4123be1f26f2829c7f17
+2026-05-25T19:40:34.7281124Z Cleaning up orphan processes
