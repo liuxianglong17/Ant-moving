@@ -1,0 +1,110 @@
+================================================================================
+[Error Classification Report] NPU Nightly Test Failure Analysis (Manual Corrected)
+================================================================================
+Analysis Time: 2026-05-27 09:49:58
+Log Directory: d:\personal_code\temp\nightly-npu-logs-26468475803
+Total Failed Cases: 59
+================================================================================
+
+[Summary] Failure Category Distribution (After Manual Correction)
+--------------------------------------------------------------------------------
+Product             :   3 (  5.1%)
+TestCase            :   2 (  3.4%)
+Environment         :  54 ( 91.5%)
+Unclassified        :   0 (  0.0%)
+================================================================================
+
+[Product Issues] 3 cases
+--------------------------------------------------------------------------------
+Case Name                                     | Pipeline        | Error Summary     | Correction Reason
+--------------------------------------------------------------------------------
+test_npu_phi_4_multimodal_llm.py              | nightly-1-(0)   | exit code 1      | Original classification
+test_npu_phi4_multimodal_instruct.py          | nightly-4-(0)   | exit code 1      | ValueError: rope_scaling must be a dictionary with three fields (Env→Product)
+test_ascend_dbrx_instruct.py                  | nightly-8-(0)   | exit code 1      | TypeError: Field 'moe_jitter_eps' with value 0 doesn't match any type (Env→Product)
+================================================================================
+
+[TestCase Issues] 2 cases
+--------------------------------------------------------------------------------
+Case Name                                     | Pipeline        | Error Summary     | Correction Reason
+--------------------------------------------------------------------------------
+test_npu_bge_reranker_v2_m3.py                | nightly-1-(0)   | exit code 1      | RuntimeError: kill_process_tree; test case cleanup issue (Product→TestCase)
+test_ascend_minimax_m2.py                     | nightly-8-(0)   | exit code 1      | TimeoutError: Server failed to start within timeout period (Env→TestCase)
+================================================================================
+
+[Environment Issues] 54 cases
+--------------------------------------------------------------------------------
+Case Name                                     | Pipeline        | Error Summary     | Correction Reason
+--------------------------------------------------------------------------------
+test_npu_offload_modes.py                     | nightly-2-(0)   | exit code 1      | Original classification
+test_npu_gguf_moe.py                          | nightly-2-(0)   | exit code 1      | Original classification
+test_npu_graph_tp2_bf16.py                    | nightly-2-(0)   | exit code 1      | Original classification
+test_npu_mla_fia_w8a8int8.py                  | nightly-2-(0)   | exit code 1      | Original classification
+test_npu_tp2_bf16.py                          | nightly-2-(0)   | exit code 1      | Original classification
+test_npu_tp2_fia_bf16.py                      | nightly-2-(0)   | exit code 1      | Original classification
+test_npu_openai_server_ignore_eos.py          | nightly-2-(0)   | exit code 1      | Original classification
+test_npu_qwen3_30b.py                         | nightly-2-(0)   | exit code 1      | Original classification
+test_npu_qwq_32b_w8a8.py                      | nightly-2-(0)   | exit code 1      | Original classification
+test_npu_deepseek_v3_2_exp_w8a8.py            | nightly-16-(0)  | exit code 1      | Original classification
+test_npu_qwen3_vl_235b_a22b_instruct.py       | nightly-16-(0)  | exit code 1      | Original classification
+test_npu_sampling_backend.py                  | nightly-1-(0)   | exit code 1      | Original classification
+test_npu_original_logprobs.py                 | nightly-1-(0)   | exit code 1      | Original classification
+test_npu_autoround_moe.py                     | nightly-1-(0)   | exit code 1      | Original classification
+test_npu_w8a8_quantization.py                 | nightly-1-(0)   | exit code 1      | Original classification
+test_npu_eagle3.py                            | nightly-1-(0)   | exit code 1      | Original classification
+test_npu_penalty.py                           | nightly-1-(0)   | exit code 1      | Original classification
+test_npu_chatglm2_6b.py                       | nightly-1-(0)   | exit code 1      | Original classification
+test_npu_glm4_9b_chat.py                      | nightly-1-(0)   | exit code 1      | Original classification
+test_npu_radix_cache.py                       | nightly-1-(1)   | exit code 1      | Original classification
+test_npu_log_level.py                         | nightly-1-(1)   | exit code 1      | Original classification
+test_npu_autoround_dense.py                   | nightly-1-(1)   | exit code 1      | Original classification
+test_npu_gptq_moe.py                          | nightly-1-(1)   | exit code 1      | Original classification
+test_npu_tp1_bf16.py                          | nightly-1-(1)   | exit code 1      | Original classification
+test_npu_api_abort_request.py                 | nightly-1-(1)   | exit code 1      | Original classification
+test_npu_matched_stop.py                      | nightly-1-(1)   | exit code 1      | Original classification
+test_npu_baichuan2_13b_chat.py                | nightly-1-(1)   | exit code 1      | Original classification
+test_npu_gemma_3_4b_it_llm.py                 | nightly-1-(1)   | exit code 1      | Original classification
+test_npu_internlm2_7b.py                      | nightly-1-(1)   | exit code 1      | Original classification
+test_npu_mistral_7b.py                        | nightly-1-(1)   | exit code 1      | Original classification
+test_npu_qwen3_0_6b.py                        | nightly-1-(1)   | exit code 1      | Original classification
+test_ascend_glm_4_5v.py                       | nightly-8-(0)   | exit code 1      | Original classification
+test_npu_qwen3_coder_480b_a35b.py             | nightly-16-(1)  | exit code 1      | Original classification
+test_npu_deepep_auto_qwen3_480b.py            | nightly-16-(1)  | exit code 1      | Original classification
+test_npu_hicache_mla.py                       | nightly-4-(0)   | exit code 1      | Original classification
+test_npu_w4a4_quantization.py                 | nightly-4-(0)   | exit code 1      | Original classification
+test_npu_mla_w8a8int8.py                      | nightly-4-(0)   | exit code 1      | Original classification
+test_npu_tp4_bf16.py                          | nightly-4-(0)   | exit code 1      | Original classification
+test_npu_qwen3_32b.py                         | nightly-4-(0)   | exit code 1      | Original classification
+test_npu_gemma_3_4b_it.py                     | nightly-4-(0)   | exit code 1      | Original classification
+test_npu_janus_pro_1b.py                      | nightly-4-(0)   | exit code 1      | Original classification
+test_npu_janus_pro_7b.py                      | nightly-4-(0)   | exit code 1      | Original classification
+test_npu_mimo_vl_7b_rl.py                     | nightly-4-(0)   | exit code 1      | Original classification
+test_npu_minicpm_v_2_6.py                     | nightly-4-(0)   | exit code 1      | Original classification
+test_npu_qwen2_5_vl_3b_instruct.py            | nightly-4-(0)   | exit code 1      | Original classification
+test_npu_qwen3_vl_30b_a3b_instruct.py         | nightly-4-(0)   | exit code 1      | Original classification
+test_npu_graph_tp1_bf16.py                    | nightly-1-(1)   | exit code 1      | RuntimeError: No backend type associated with device type npu (Product→Env)
+test_npu_llama_2_7b.py                        | nightly-1-(0)   | exit code 1      | RuntimeError: No backend type associated with device type npu (TestCase→Env)
+test_npu_mistral_small_3_1_24b_instruct_2503  | nightly-4-(0)   | exit code 1      | RuntimeError: No backend type associated with device type npu (TestCase→Env)
+test_npu_memory_consumption.py                | nightly-2-(0)   | exit code 1      | RuntimeError: No backend type associated with device type npu (Unclassified→Env)
+test_npu_piecewise_graph_prefill.py           | nightly-1-(0)   | exit code 1      | RuntimeError: No backend type associated with device type npu (Unclassified→Env)
+test_npu_gguf.py                              | nightly-1-(1)   | exit code 1      | RuntimeError: No backend type associated with device type npu (Unclassified→Env)
+test_npu_qwen2_5_vl_72b_instruct.py           | nightly-8-(0)   | exit code 1      | RuntimeError: No backend type associated with device type npu (Unclassified→Env)
+test_npu_qwen3_vl_8b_instruct.py              | nightly-4-(0)   | exit code 1      | RuntimeError: No backend type associated with device type npu (Unclassified→Env)
+================================================================================
+
+[Manual Correction Records]
+--------------------------------------------------------------------------------
+Original -> Corrected | Case Name | Correction Reason
+--------------------------------------------------------------------------------
+Product -> TestCase    | test_npu_bge_reranker_v2_m3.py | RuntimeError: kill_process_tree: 66 process(es) not reaped within 60s after SIGKILL; test case cleanup issue
+Product -> Environment | test_npu_graph_tp1_bf16.py | RuntimeError: No backend type associated with device type npu
+TestCase -> Environment| test_npu_llama_2_7b.py | RuntimeError: No backend type associated with device type npu
+TestCase -> Environment| test_npu_mistral_small_3_1_24b_instruct_2503 | RuntimeError: No backend type associated with device type npu
+Environment -> Product | test_npu_phi4_multimodal_instruct.py | ValueError: rope_scaling must be a dictionary with three fields, type, short_factor and long_factor
+Environment -> Product | test_ascend_dbrx_instruct.py | TypeError: Field moe_jitter_eps with value 0 doesnt match any type in (<class float>, <class NoneType>)
+Environment -> TestCase | test_ascend_minimax_m2.py | TimeoutError: Server failed to start within the timeout period
+Unclassified -> Environment | test_npu_memory_consumption.py | RuntimeError: No backend type associated with device type npu
+Unclassified -> Environment | test_npu_piecewise_graph_prefill.py | RuntimeError: No backend type associated with device type npu
+Unclassified -> Environment | test_npu_gguf.py | RuntimeError: No backend type associated with device type npu
+Unclassified -> Environment | test_npu_qwen2_5_vl_72b_instruct.py | RuntimeError: No backend type associated with device type npu
+Unclassified -> Environment | test_npu_qwen3_vl_8b_instruct.py | RuntimeError: No backend type associated with device type npu
+================================================================================

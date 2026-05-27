@@ -1,0 +1,49 @@
+test_npu_bge_reranker_v2_m3.py 
+分类修改为用例问题
+原因：报错信息包含RuntimeError: kill_process_tree: 66 process(es) not reaped within 60s after SIGKILL;开发定位为用例清理环境方式问题
+定位人：王姚
+
+test_npu_graph_tp1_bf16.py
+分类修改为环境问题
+原因：报错信息包含RuntimeError: No backend type associated with device type npu 
+定位人：刘祥隆
+
+test_npu_llama_2_7b.py
+分类修改为环境问题
+原因：报错信息包含RuntimeError: No backend type associated with device type npu 
+定位人：刘祥隆
+
+test_npu_mistral_small_3_1_24b_instruct_2503
+分类修改为环境问题
+原因：报错信息包含RuntimeError: No backend type associated with device type npu
+定位人：刘祥隆
+
+test_npu_phi4_multimodal_instruct.py
+分类修改为产品问题
+原因：报错信息包含 ValueError: `rope_scaling` must be a dictionary with three fields, `type`, `short_factor` and `long_factor`
+定位人：吴卓芸
+
+test_ascend_dbrx_instruct.py
+分类修改为产品问题
+原因：报错信息包含TypeError: Field 'moe_jitter_eps' with value 0 doesn't match any type in (<class 'float'>, <class 'NoneType'>).
+定位人：张华
+
+test_ascend_minimax_m2.py
+分类修改为用例问题
+原因：报错信息包含 TimeoutError: Server failed to start within the timeout period3
+定位人：刘祥隆
+
+test_npu_memory_consumption.py
+分类修改为环境问题
+原因：报错信息包含RuntimeError: No backend type associated with device type npu
+定位人：刘祥隆
+
+test_npu_piecewise_graph_prefill.py
+分类修改为环境问题
+原因：报错信息包含RuntimeError: No backend type associated with device type npu
+定位人：刘祥隆
+
+test_npu_gguf.py、test_npu_qwen2_5_vl_72b_instruct.py、test_npu_qwen3_vl_8b_instruct.py 
+分类修改为环境问题
+原因：报错信息包含RuntimeError: No backend type associated with device type npu
+定位人：刘祥隆
