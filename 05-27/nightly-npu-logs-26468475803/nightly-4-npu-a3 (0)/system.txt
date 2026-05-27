@@ -1,0 +1,8 @@
+2026-05-26T18:52:26.6250000Z Requested labels: linux-aarch64-a3-4
+2026-05-26T18:52:26.6250000Z Job defined at: sgl-project/sglang/.github/workflows/nightly-test-npu.yml@refs/heads/main
+2026-05-26T18:52:26.6250000Z Waiting for a runner to pick up this job...
+2026-05-26T18:52:26.6200000Z Evaluating nightly-4-npu-a3.if
+2026-05-26T18:52:26.6200000Z Evaluating: (success() && ((((github.repository == 'sgl-project/sglang') || (github.event_name == 'pull_request')))))
+2026-05-26T18:52:26.6200000Z Expanded: (true && (('sgl-project/sglang' == 'sgl-project/sglang') || (github.event_name == 'pull_request')))
+2026-05-26T18:52:26.6200000Z Result: true
+2026-05-26T18:52:27.0070000Z Job is about to start running on the runner: linux-aarch64-a3-4

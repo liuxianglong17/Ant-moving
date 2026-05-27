@@ -1,0 +1,353 @@
+================================================================================
+[Analysis] GitHub Actions Test Log Analysis Report
+================================================================================
+Analysis Directory: d:\personal_code\temp\nightly-npu-logs-26468475803
+Analysis Time: 2026-05-27 09:24:21
+================================================================================
+
+[File] File: 1_nightly-2-npu-a3 (0).txt
+[Result] Result: 1/11 passed
+[Skip] Skipped: 2 case(s)
+------------------------------------------------------------
+[OK] PASSED:
+  test_ascend_trinity_mini.py
+
+[FAIL] FAILED:
+  test_npu_offload_modes.py
+  test_npu_gguf_moe.py
+  test_npu_graph_tp2_bf16.py
+  test_npu_mla_fia_w8a8int8.py
+  test_npu_tp2_bf16.py
+  test_npu_tp2_fia_bf16.py
+  test_npu_openai_server_ignore_eos.py
+  test_npu_qwen3_30b.py
+  test_npu_qwq_32b_w8a8.py
+  test_npu_memory_consumption.py
+
+[SKIP] SKIPPED:
+  test_npu_enable_thinking.py (reason: https://github.com/Ascend/sglang/issues/32)
+  test_npu_hierarchical_cache_ttft_mha.py (reason: run failed)
+================================================================================
+
+[File] File: 2_nightly-16-npu-a3 (0).txt
+[Result] Result: 1/3 passed
+[Skip] Skipped: 1 case(s)
+------------------------------------------------------------
+[OK] PASSED:
+  test_npu_deepep.py
+
+[FAIL] FAILED:
+  test_npu_deepseek_v3_2_exp_w8a8.py
+  test_npu_qwen3_vl_235b_a22b_instruct.py
+
+[SKIP] SKIPPED:
+  test_npu_hierarchical_cache_mla.py (reason: run failed)
+================================================================================
+
+[File] File: 3_nightly-1-npu-a3 (0).txt
+[Result] Result: 4/16 passed
+[Skip] Skipped: 7 case(s)
+------------------------------------------------------------
+[OK] PASSED:
+  test_npu_hicache_mha.py
+  test_npu_hierarchical_cache_mutually_exclusive.py
+  test_npu_compile_graph_tp1_bf16.py
+  test_npu_api_encode.py
+
+[FAIL] FAILED:
+  test_npu_sampling_backend.py
+  test_npu_piecewise_graph_prefill.py
+  test_npu_original_logprobs.py
+  test_npu_autoround_moe.py
+  test_npu_w8a8_quantization.py
+  test_npu_eagle3.py
+  test_npu_penalty.py
+  test_npu_chatglm2_6b.py
+  test_npu_glm4_9b_chat.py
+  test_npu_llama_2_7b.py
+  test_npu_phi_4_multimodal_llm.py
+  test_npu_bge_reranker_v2_m3.py
+
+[SKIP] SKIPPED:
+  test_load_weights_from_remote_instance_npu.py (reason: run failed)
+  test_npu_openai_function_calling.py (reason: https://github.com/Ascend/sglang/issues/39)
+  test_npu_no_overlap_scheduler.py (reason: run failed)
+  test_npu_no_chunked_prefill.py (reason: run failed)
+  test_npu_fim_completion.py (reason: run failed)
+  test_npu_minicpm3_4b.py (reason: https://github.com/Ascend/sglang/issues/23)
+  test_npu_llama_3_2_11b_vision_instruct.py (reason: run failed)
+================================================================================
+
+[File] File: 4_nightly-1-npu-a3 (1).txt
+[Result] Result: 2/16 passed
+[Skip] Skipped: 7 case(s)
+------------------------------------------------------------
+[OK] PASSED:
+  test_npu_hierarchical_cache.py
+  test_npu_llada2_mini.py
+
+[FAIL] FAILED:
+  test_npu_radix_cache.py
+  test_npu_graph_tp1_bf16.py
+  test_npu_log_level.py
+  test_npu_autoround_dense.py
+  test_npu_gptq_moe.py
+  test_npu_tp1_bf16.py
+  test_npu_api_abort_request.py
+  test_npu_matched_stop.py
+  test_npu_baichuan2_13b_chat.py
+  test_npu_gemma_3_4b_it_llm.py
+  test_npu_internlm2_7b.py
+  test_npu_mistral_7b.py
+  test_npu_qwen3_0_6b.py
+  test_npu_gguf.py
+
+[SKIP] SKIPPED:
+  test_load_weights_from_remote_instance_npu.py (reason: run failed)
+  test_npu_openai_function_calling.py (reason: https://github.com/Ascend/sglang/issues/39)
+  test_npu_no_overlap_scheduler.py (reason: run failed)
+  test_npu_no_chunked_prefill.py (reason: run failed)
+  test_npu_fim_completion.py (reason: run failed)
+  test_npu_minicpm3_4b.py (reason: https://github.com/Ascend/sglang/issues/23)
+  test_npu_llama_3_2_11b_vision_instruct.py (reason: run failed)
+================================================================================
+
+[File] File: 5_nightly-8-npu-a3 (0).txt
+[Result] Result: 1/5 passed
+[Skip] Skipped: 2 case(s)
+------------------------------------------------------------
+[OK] PASSED:
+  test_npu_qwen3_235b_a22b_w8a8.py
+
+[FAIL] FAILED:
+  test_ascend_dbrx_instruct.py
+  test_ascend_minimax_m2.py
+  test_ascend_glm_4_5v.py
+  test_npu_qwen2_5_vl_72b_instruct.py
+
+[SKIP] SKIPPED:
+  test_npu_deepep_auto_qwen3_next.py (reason: https://github.com/Ascend/sglang/issues/58)
+  test_npu_deepep_low_latency_qwen3_next.py (reason: https://github.com/Ascend/sglang/issues/58)
+================================================================================
+
+[File] File: 6_nightly-16-npu-a3 (1).txt
+[Result] Result: 1/3 passed
+[Skip] Skipped: 1 case(s)
+------------------------------------------------------------
+[OK] PASSED:
+  test_npu_deepep_auto_deepseek_v3_2_w8a8.py
+
+[FAIL] FAILED:
+  test_npu_qwen3_coder_480b_a35b.py
+  test_npu_deepep_auto_qwen3_480b.py
+
+[SKIP] SKIPPED:
+  test_npu_hierarchical_cache_mla.py (reason: run failed)
+================================================================================
+
+[File] File: 7_nightly-4-npu-a3 (0).txt
+[Result] Result: 1/16 passed
+[Skip] Skipped: 5 case(s)
+------------------------------------------------------------
+[OK] PASSED:
+  test_npu_qwen3_30b_attn_cp.py
+
+[FAIL] FAILED:
+  test_npu_hicache_mla.py
+  test_npu_w4a4_quantization.py
+  test_npu_mla_w8a8int8.py
+  test_npu_tp4_bf16.py
+  test_npu_qwen3_32b.py
+  test_npu_gemma_3_4b_it.py
+  test_npu_janus_pro_1b.py
+  test_npu_janus_pro_7b.py
+  test_npu_mimo_vl_7b_rl.py
+  test_npu_minicpm_v_2_6.py
+  test_npu_mistral_small_3_1_24b_instruct_2503.py
+  test_npu_phi4_multimodal_instruct.py
+  test_npu_qwen2_5_vl_3b_instruct.py
+  test_npu_qwen3_vl_30b_a3b_instruct.py
+  test_npu_qwen3_vl_8b_instruct.py
+
+[SKIP] SKIPPED:
+  test_npu_warmups.py (reason: run failed)
+  test_npu_deepseek_vl2.py (reason: run failed)
+  test_npu_minicpm_o_2_6.py (reason: run failed)
+  test_npu_kimi_vl_a3b_instruct.py (reason: run failed)
+  test_npu_llama4_scount_17b_16e.py (reason: https://github.com/Ascend/sglang/issues/25)
+================================================================================
+
+================================================================================
+[Table] Failed Cases Table
+================================================================================
+Case Name		Note		Pipeline Name
+test_npu_offload_modes.py			nightly-2-(0)
+test_npu_gguf_moe.py			nightly-2-(0)
+test_npu_graph_tp2_bf16.py			nightly-2-(0)
+test_npu_mla_fia_w8a8int8.py			nightly-2-(0)
+test_npu_tp2_bf16.py			nightly-2-(0)
+test_npu_tp2_fia_bf16.py			nightly-2-(0)
+test_npu_openai_server_ignore_eos.py			nightly-2-(0)
+test_npu_qwen3_30b.py			nightly-2-(0)
+test_npu_qwq_32b_w8a8.py			nightly-2-(0)
+test_npu_memory_consumption.py			nightly-2-(0)
+test_npu_deepseek_v3_2_exp_w8a8.py			nightly-16-(0)
+test_npu_qwen3_vl_235b_a22b_instruct.py			nightly-16-(0)
+test_npu_sampling_backend.py			nightly-1-(0)
+test_npu_piecewise_graph_prefill.py			nightly-1-(0)
+test_npu_original_logprobs.py			nightly-1-(0)
+test_npu_autoround_moe.py			nightly-1-(0)
+test_npu_w8a8_quantization.py			nightly-1-(0)
+test_npu_eagle3.py			nightly-1-(0)
+test_npu_penalty.py			nightly-1-(0)
+test_npu_chatglm2_6b.py			nightly-1-(0)
+test_npu_glm4_9b_chat.py			nightly-1-(0)
+test_npu_llama_2_7b.py			nightly-1-(0)
+test_npu_phi_4_multimodal_llm.py			nightly-1-(0)
+test_npu_bge_reranker_v2_m3.py			nightly-1-(0)
+test_npu_radix_cache.py			nightly-1-(1)
+test_npu_graph_tp1_bf16.py			nightly-1-(1)
+test_npu_log_level.py			nightly-1-(1)
+test_npu_autoround_dense.py			nightly-1-(1)
+test_npu_gptq_moe.py			nightly-1-(1)
+test_npu_tp1_bf16.py			nightly-1-(1)
+test_npu_api_abort_request.py			nightly-1-(1)
+test_npu_matched_stop.py			nightly-1-(1)
+test_npu_baichuan2_13b_chat.py			nightly-1-(1)
+test_npu_gemma_3_4b_it_llm.py			nightly-1-(1)
+test_npu_internlm2_7b.py			nightly-1-(1)
+test_npu_mistral_7b.py			nightly-1-(1)
+test_npu_qwen3_0_6b.py			nightly-1-(1)
+test_npu_gguf.py			nightly-1-(1)
+test_ascend_dbrx_instruct.py			nightly-8-(0)
+test_ascend_minimax_m2.py			nightly-8-(0)
+test_ascend_glm_4_5v.py			nightly-8-(0)
+test_npu_qwen2_5_vl_72b_instruct.py			nightly-8-(0)
+test_npu_qwen3_coder_480b_a35b.py			nightly-16-(1)
+test_npu_deepep_auto_qwen3_480b.py			nightly-16-(1)
+test_npu_hicache_mla.py			nightly-4-(0)
+test_npu_w4a4_quantization.py			nightly-4-(0)
+test_npu_mla_w8a8int8.py			nightly-4-(0)
+test_npu_tp4_bf16.py			nightly-4-(0)
+test_npu_qwen3_32b.py			nightly-4-(0)
+test_npu_gemma_3_4b_it.py			nightly-4-(0)
+test_npu_janus_pro_1b.py			nightly-4-(0)
+test_npu_janus_pro_7b.py			nightly-4-(0)
+test_npu_mimo_vl_7b_rl.py			nightly-4-(0)
+test_npu_minicpm_v_2_6.py			nightly-4-(0)
+test_npu_mistral_small_3_1_24b_instruct_2503.py			nightly-4-(0)
+test_npu_phi4_multimodal_instruct.py			nightly-4-(0)
+test_npu_qwen2_5_vl_3b_instruct.py			nightly-4-(0)
+test_npu_qwen3_vl_30b_a3b_instruct.py			nightly-4-(0)
+test_npu_qwen3_vl_8b_instruct.py			nightly-4-(0)
+
+================================================================================
+[Table] Skipped Cases Table
+================================================================================
+Case Name		Note		Pipeline Name
+test_npu_enable_thinking.py	https://github.com/Ascend/sglang/issues/32	nightly-2-(0)
+test_npu_hierarchical_cache_ttft_mha.py	run failed	nightly-2-(0)
+test_npu_hierarchical_cache_mla.py	run failed	nightly-16-(0)
+test_load_weights_from_remote_instance_npu.py	run failed	nightly-1-(0)
+test_npu_openai_function_calling.py	https://github.com/Ascend/sglang/issues/39	nightly-1-(0)
+test_npu_no_overlap_scheduler.py	run failed	nightly-1-(0)
+test_npu_no_chunked_prefill.py	run failed	nightly-1-(0)
+test_npu_fim_completion.py	run failed	nightly-1-(0)
+test_npu_minicpm3_4b.py	https://github.com/Ascend/sglang/issues/23	nightly-1-(0)
+test_npu_llama_3_2_11b_vision_instruct.py	run failed	nightly-1-(0)
+test_npu_deepep_auto_qwen3_next.py	https://github.com/Ascend/sglang/issues/58	nightly-8-(0)
+test_npu_deepep_low_latency_qwen3_next.py	https://github.com/Ascend/sglang/issues/58	nightly-8-(0)
+test_npu_warmups.py	run failed	nightly-4-(0)
+test_npu_deepseek_vl2.py	run failed	nightly-4-(0)
+test_npu_minicpm_o_2_6.py	run failed	nightly-4-(0)
+test_npu_kimi_vl_a3b_instruct.py	run failed	nightly-4-(0)
+test_npu_llama4_scount_17b_16e.py	https://github.com/Ascend/sglang/issues/25	nightly-4-(0)
+
+================================================================================
+[Summary] Global Statistics
+================================================================================
+Total Executed Cases: 70
+Total Passed Cases: 11
+Total Failed Cases: 59
+Total Skipped Cases: 17 (deduplicated, raw: 25)
+
+[List] All Failed Cases:
+ 1. test_npu_offload_modes.py
+ 2. test_npu_gguf_moe.py
+ 3. test_npu_graph_tp2_bf16.py
+ 4. test_npu_mla_fia_w8a8int8.py
+ 5. test_npu_tp2_bf16.py
+ 6. test_npu_tp2_fia_bf16.py
+ 7. test_npu_openai_server_ignore_eos.py
+ 8. test_npu_qwen3_30b.py
+ 9. test_npu_qwq_32b_w8a8.py
+10. test_npu_memory_consumption.py
+11. test_npu_deepseek_v3_2_exp_w8a8.py
+12. test_npu_qwen3_vl_235b_a22b_instruct.py
+13. test_npu_sampling_backend.py
+14. test_npu_piecewise_graph_prefill.py
+15. test_npu_original_logprobs.py
+16. test_npu_autoround_moe.py
+17. test_npu_w8a8_quantization.py
+18. test_npu_eagle3.py
+19. test_npu_penalty.py
+20. test_npu_chatglm2_6b.py
+21. test_npu_glm4_9b_chat.py
+22. test_npu_llama_2_7b.py
+23. test_npu_phi_4_multimodal_llm.py
+24. test_npu_bge_reranker_v2_m3.py
+25. test_npu_radix_cache.py
+26. test_npu_graph_tp1_bf16.py
+27. test_npu_log_level.py
+28. test_npu_autoround_dense.py
+29. test_npu_gptq_moe.py
+30. test_npu_tp1_bf16.py
+31. test_npu_api_abort_request.py
+32. test_npu_matched_stop.py
+33. test_npu_baichuan2_13b_chat.py
+34. test_npu_gemma_3_4b_it_llm.py
+35. test_npu_internlm2_7b.py
+36. test_npu_mistral_7b.py
+37. test_npu_qwen3_0_6b.py
+38. test_npu_gguf.py
+39. test_ascend_dbrx_instruct.py
+40. test_ascend_minimax_m2.py
+41. test_ascend_glm_4_5v.py
+42. test_npu_qwen2_5_vl_72b_instruct.py
+43. test_npu_qwen3_coder_480b_a35b.py
+44. test_npu_deepep_auto_qwen3_480b.py
+45. test_npu_hicache_mla.py
+46. test_npu_w4a4_quantization.py
+47. test_npu_mla_w8a8int8.py
+48. test_npu_tp4_bf16.py
+49. test_npu_qwen3_32b.py
+50. test_npu_gemma_3_4b_it.py
+51. test_npu_janus_pro_1b.py
+52. test_npu_janus_pro_7b.py
+53. test_npu_mimo_vl_7b_rl.py
+54. test_npu_minicpm_v_2_6.py
+55. test_npu_mistral_small_3_1_24b_instruct_2503.py
+56. test_npu_phi4_multimodal_instruct.py
+57. test_npu_qwen2_5_vl_3b_instruct.py
+58. test_npu_qwen3_vl_30b_a3b_instruct.py
+59. test_npu_qwen3_vl_8b_instruct.py
+
+[List] All Skipped Cases (deduplicated):
+ 1.	test_npu_enable_thinking.py	https://github.com/Ascend/sglang/issues/32	nightly-2-(0)
+ 2.	test_npu_hierarchical_cache_ttft_mha.py	run failed	nightly-2-(0)
+ 3.	test_npu_hierarchical_cache_mla.py	run failed	nightly-16-(0)
+ 4.	test_load_weights_from_remote_instance_npu.py	run failed	nightly-1-(0)
+ 5.	test_npu_openai_function_calling.py	https://github.com/Ascend/sglang/issues/39	nightly-1-(0)
+ 6.	test_npu_no_overlap_scheduler.py	run failed	nightly-1-(0)
+ 7.	test_npu_no_chunked_prefill.py	run failed	nightly-1-(0)
+ 8.	test_npu_fim_completion.py	run failed	nightly-1-(0)
+ 9.	test_npu_minicpm3_4b.py	https://github.com/Ascend/sglang/issues/23	nightly-1-(0)
+10.	test_npu_llama_3_2_11b_vision_instruct.py	run failed	nightly-1-(0)
+11.	test_npu_deepep_auto_qwen3_next.py	https://github.com/Ascend/sglang/issues/58	nightly-8-(0)
+12.	test_npu_deepep_low_latency_qwen3_next.py	https://github.com/Ascend/sglang/issues/58	nightly-8-(0)
+13.	test_npu_warmups.py	run failed	nightly-4-(0)
+14.	test_npu_deepseek_vl2.py	run failed	nightly-4-(0)
+15.	test_npu_minicpm_o_2_6.py	run failed	nightly-4-(0)
+16.	test_npu_kimi_vl_a3b_instruct.py	run failed	nightly-4-(0)
+17.	test_npu_llama4_scount_17b_16e.py	https://github.com/Ascend/sglang/issues/25	nightly-4-(0)
+================================================================================

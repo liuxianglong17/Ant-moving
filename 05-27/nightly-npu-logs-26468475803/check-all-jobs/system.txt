@@ -1,0 +1,9 @@
+2026-05-26T19:48:15.6990000Z Requested labels: ubuntu-latest
+2026-05-26T19:48:15.6990000Z Job defined at: sgl-project/sglang/.github/workflows/nightly-test-npu.yml@refs/heads/main
+2026-05-26T19:48:15.6990000Z Waiting for a runner to pick up this job...
+2026-05-26T19:48:15.6950000Z Evaluating check-all-jobs.if
+2026-05-26T19:48:15.6950000Z Evaluating: ((github.repository == 'sgl-project/sglang') && always())
+2026-05-26T19:48:15.6950000Z Expanded: (('sgl-project/sglang' == 'sgl-project/sglang') && true)
+2026-05-26T19:48:15.6950000Z Result: true
+2026-05-26T19:48:15.9330000Z Job is waiting for a hosted runner to come online.
+2026-05-26T19:48:15.9330000Z Job is about to start running on the hosted runner: GitHub Actions 1001174704
