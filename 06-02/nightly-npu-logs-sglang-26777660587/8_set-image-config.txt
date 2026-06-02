@@ -1,0 +1,60 @@
+﻿2026-06-01T19:41:26.4111133Z Current runner version: '2.334.0'
+2026-06-01T19:41:26.4139397Z ##[group]Runner Image Provisioner
+2026-06-01T19:41:26.4140502Z Hosted Compute Agent
+2026-06-01T19:41:26.4141119Z Version: 20260520.533
+2026-06-01T19:41:26.4141760Z Commit: 189110e25284a9812c124fd27b339e2fb4f2f9db
+2026-06-01T19:41:26.4142918Z Build Date: 2026-05-20T17:44:04Z
+2026-06-01T19:41:26.4143662Z Worker ID: {9f9b68ac-9af6-40b0-aeb1-ca58374c7a34}
+2026-06-01T19:41:26.4144436Z Azure Region: eastus2
+2026-06-01T19:41:26.4145057Z ##[endgroup]
+2026-06-01T19:41:26.4146791Z ##[group]Operating System
+2026-06-01T19:41:26.4147573Z Ubuntu
+2026-06-01T19:41:26.4148125Z 24.04.4
+2026-06-01T19:41:26.4148636Z LTS
+2026-06-01T19:41:26.4149240Z ##[endgroup]
+2026-06-01T19:41:26.4149819Z ##[group]Runner Image
+2026-06-01T19:41:26.4150563Z Image: ubuntu-24.04
+2026-06-01T19:41:26.4151158Z Version: 20260525.161.1
+2026-06-01T19:41:26.4152668Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260525.161/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-01T19:41:26.4154384Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260525.161
+2026-06-01T19:41:26.4155510Z ##[endgroup]
+2026-06-01T19:41:26.4156749Z ##[group]GITHUB_TOKEN Permissions
+2026-06-01T19:41:26.4159136Z Contents: read
+2026-06-01T19:41:26.4159761Z Metadata: read
+2026-06-01T19:41:26.4160362Z Packages: read
+2026-06-01T19:41:26.4161054Z ##[endgroup]
+2026-06-01T19:41:26.4163706Z Secret source: Actions
+2026-06-01T19:41:26.4164947Z Prepare workflow directory
+2026-06-01T19:41:26.4510803Z Prepare all required actions
+2026-06-01T19:41:26.4604351Z Complete job name: set-image-config
+2026-06-01T19:41:26.5363805Z ##[group]Run if [ -z "" ]; then
+2026-06-01T19:41:26.5364652Z [36;1mif [ -z "" ]; then[0m
+2026-06-01T19:41:26.5365425Z [36;1m  echo "ref=" >> $GITHUB_OUTPUT[0m
+2026-06-01T19:41:26.5366184Z [36;1melse[0m
+2026-06-01T19:41:26.5366879Z [36;1m  echo "ref=" >> $GITHUB_OUTPUT[0m
+2026-06-01T19:41:26.5367616Z [36;1mfi[0m
+2026-06-01T19:41:26.5368142Z [36;1m[0m
+2026-06-01T19:41:26.5368778Z [36;1mif [ -z "" ]; then[0m
+2026-06-01T19:41:26.5369469Z [36;1m  echo "job_filter=all" >> $GITHUB_OUTPUT[0m
+2026-06-01T19:41:26.5370169Z [36;1melse[0m
+2026-06-01T19:41:26.5370851Z [36;1m  echo "job_filter=" >> $GITHUB_OUTPUT[0m
+2026-06-01T19:41:26.5371538Z [36;1mfi[0m
+2026-06-01T19:41:26.5372141Z [36;1m[0m
+2026-06-01T19:41:26.5372986Z [36;1mif [ -z "" ]; then[0m
+2026-06-01T19:41:26.5374232Z [36;1m  echo "image_a3=swr.cn-southwest-2.myhuaweicloud.com/base_image/ascend-ci/cann:9.0.0-a3-ubuntu22.04-py3.11" >> $GITHUB_OUTPUT[0m
+2026-06-01T19:41:26.5375455Z [36;1melse[0m
+2026-06-01T19:41:26.5376214Z [36;1m  echo "image_a3=" >> $GITHUB_OUTPUT[0m
+2026-06-01T19:41:26.5376971Z [36;1mfi[0m
+2026-06-01T19:41:26.5377526Z [36;1m[0m
+2026-06-01T19:41:26.5378115Z [36;1mif [ -z "" ]; then[0m
+2026-06-01T19:41:26.5378856Z [36;1m  echo "skip_install_flag=false" >> $GITHUB_OUTPUT[0m
+2026-06-01T19:41:26.5379643Z [36;1melse[0m
+2026-06-01T19:41:26.5380333Z [36;1m  echo "skip_install_flag=" >> $GITHUB_OUTPUT[0m
+2026-06-01T19:41:26.5381066Z [36;1mfi[0m
+2026-06-01T19:41:26.5733735Z shell: /usr/bin/bash -e {0}
+2026-06-01T19:41:26.5734822Z ##[endgroup]
+2026-06-01T19:41:26.6080009Z Evaluate and set job outputs
+2026-06-01T19:41:26.6091707Z Set output 'job_filter'
+2026-06-01T19:41:26.6095383Z Set output 'image_a3'
+2026-06-01T19:41:26.6096471Z Set output 'skip_install_flag'
+2026-06-01T19:41:26.6098152Z Cleaning up orphan processes

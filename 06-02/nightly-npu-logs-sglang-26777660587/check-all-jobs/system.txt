@@ -1,0 +1,9 @@
+2026-06-01T21:29:01.3530000Z Evaluating check-all-jobs.if
+2026-06-01T21:29:01.3530000Z Evaluating: ((github.repository == 'sgl-project/sglang') && always())
+2026-06-01T21:29:01.3530000Z Expanded: (('sgl-project/sglang' == 'sgl-project/sglang') && true)
+2026-06-01T21:29:01.3530000Z Result: true
+2026-06-01T21:29:01.8440000Z Requested labels: ubuntu-latest
+2026-06-01T21:29:01.8440000Z Job defined at: sgl-project/sglang/.github/workflows/nightly-test-npu.yml@refs/heads/main
+2026-06-01T21:29:01.8440000Z Waiting for a runner to pick up this job...
+2026-06-01T21:29:02.8670000Z Job is about to start running on the hosted runner: GitHub Actions 1001277468
+2026-06-01T21:29:02.8670000Z Job is waiting for a hosted runner to come online.
