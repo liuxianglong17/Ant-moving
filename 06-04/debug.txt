@@ -1,12 +1,10 @@
-Get-ChildItem "d:\personal_code\temp\nightl-log-reporter\outputs\06-04\sgl-kernel-npu" -Recurse -Depth 2
-
-# 2) 看 analysis-brief.json 有没有生成
-Get-ChildItem "d:\personal_code\temp\nightl-log-reporter\outputs\06-04\sgl-kernel-npu" -Recurse -Filter "analysis-brief.json"
-
-# 3) 看跑过的日志里 kernel 那段有没有 WARN
-Select-String -Path "d:\personal_code\temp\nightl-log-reporter\logs\run-*.log" -Pattern "WARN|kernel|job-mode"
-
-# 4) 单独再跑一次 kernel 模式看真实错误
+cd "d:\personal_code\temp"
 python "d:\personal_code\temp\nightl-log-reporter\scripts\analyze\analyze-log.py" `
     --out-dir "d:\personal_code\temp\nightl-log-reporter\outputs\06-04\sgl-kernel-npu" `
     --mode job
+
+# 1) 看下 kernel 目录的真实结构
+Get-ChildItem "d:\personal_code\temp\nightl-log-reporter\outputs\06-04\sgl-kernel-npu" -Recurse -Depth 2 | Select-Object FullName
+
+# 2) 看下上一次跑的日志里 kernel 这段有什么警告
+Select-String -Path "d:\personal_code\temp\nightl-log-reporter\logs\run-*.log" -Pattern "kernel|WARN" -SimpleMatch | Select-Object -Last 30
