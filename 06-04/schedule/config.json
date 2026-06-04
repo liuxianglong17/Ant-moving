@@ -1,6 +1,5 @@
 {
-    "schedule_mode": "interval",
-    "trigger_time": "2026-06-04T11:15:00",
-    "interval_seconds": 60,
+    "schedule_mode": "daily",
+    "trigger_time": "2026-06-04T05:30:00",
     "job_config_path": "d:\\personal_code\\temp\\schedule\\job_config.json"
 }

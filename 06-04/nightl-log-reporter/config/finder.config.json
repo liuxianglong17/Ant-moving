@@ -1,0 +1,11 @@
+{
+  "_comment": "find-workflow.ps1 的配置。修改此文件可适配任意仓库/工作流。",
+  "workflow_url": "https://github.com/sgl-project/sglang/actions/workflows/nightly-test-npu.yml",
+  "branch": "main",
+  "event": "schedule",
+  "date": "",
+  "_date_help": "留空 = 今日 (本地)。也可填 yyyy-MM-dd 指定单日, 或填 start_date/end_date 范围。",
+  "start_date": "",
+  "end_date": "",
+  "max_pages": 5
+}
