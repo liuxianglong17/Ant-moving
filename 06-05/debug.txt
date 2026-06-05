@@ -1,1 +1,7 @@
 powershell -NoProfile -ExecutionPolicy Bypass -File ".\run_all.ps1" -Target sgl-kernel-npu -SkipFind
+
+schtasks /Query /TN SglangScheduledTask_* /V /FO LIST | Select-String "上次运行结果|Last Run|Result|Code|Exit"
+
+Get-ChildItem "d:\personal_code\temp\nightl-log-reporter\logs\run-*.log" |
+    Sort-Object LastWriteTime -Descending | Select-Object -First 1 |
+    ForEach-Object { Get-Content $_.FullName -Tail 50 }
