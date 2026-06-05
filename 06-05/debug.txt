@@ -1,0 +1,1 @@
+powershell -NoProfile -ExecutionPolicy Bypass -File ".\run_all.ps1" -Target sgl-kernel-npu -SkipFind
