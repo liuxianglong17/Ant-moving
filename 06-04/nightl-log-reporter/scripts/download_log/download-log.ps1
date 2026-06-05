@@ -1,4 +1,4 @@
-﻿# download-log.ps1
+# download-log.ps1
 # Read config\downloader.config.json + outputs\<MM-DD>\workflow-info.json,
 # download each matched run's job logs to outputs\<MM-DD>\<owner>-<repo>-<run_id>\.
 # Supports multiple runs (e.g. multiple branches or triggers).
@@ -91,6 +91,20 @@ function Download-RunLogs {
 
     Write-Host "[downloader]   total jobs: $($jobs.Count)"
     New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
+
+    # 缓存 jobs 全量数据, 给 analyze-log.py 离线读 (job 模式分析不用再调 API)
+    $jobsCachePath = Join-Path $OutputDir "jobs.json"
+    $jobsCache = @{
+        total     = $jobs.Count
+        jobs      = $jobs
+        cached_at = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss")
+    }
+    try {
+        [System.IO.File]::WriteAllText($jobsCachePath, ($jobsCache | ConvertTo-Json -Depth 8), (New-Object System.Text.UTF8Encoding $false))
+        Write-Host "[downloader]   cached jobs.json: $jobsCachePath"
+    } catch {
+        Write-Host "[downloader]   WARN: failed to write jobs.json: $_"
+    }
 
     $ok = 0; $fail = 0
     foreach ($job in $jobs) {

@@ -496,8 +496,30 @@ def _build_job_report_lines(run_dir, run_id, jobs, lang="en"):
     }
 
 
+def load_jobs_from_cache(run_dir):
+    """优先从 downloader 缓存的 jobs.json 读 (避免再调一次 API).
+
+    返回值:
+        list[job]  - 解析成功
+        None       - 没有缓存 / 解析失败 (调用方应回退到 API)
+    """
+    cache_path = os.path.join(run_dir, "jobs.json")
+    if not os.path.isfile(cache_path):
+        return None
+    try:
+        with open(cache_path, "r", encoding="utf-8-sig") as f:
+            data = json.load(f)
+        jobs = data.get("jobs", [])
+        if jobs:
+            print(f"[analyzer]   loaded {len(jobs)} job(s) from local cache: jobs.json")
+            return jobs
+    except Exception as e:
+        print(f"[analyzer]   WARN: failed to read jobs.json cache: {e}")
+    return None
+
+
 def analyze_job_mode(run_dir, token):
-    """job 模式分析: 调 GitHub API 读 jobs status, 写两份报告 + 简报 JSON."""
+    """job 模式分析: 优先读 downloader 缓存的 jobs.json, 读不到再调 API."""
     name = os.path.basename(run_dir)
     parsed = parse_run_dir_name(name)
     # 优先用 download-summary.json 拿精确 owner/repo
@@ -514,15 +536,20 @@ def analyze_job_mode(run_dir, token):
     else:
         print(f"[analyzer] WARN: run dir name '{name}' doesn't match <owner>-<repo>-<run_id>, skip job-mode analysis")
         return None
-    print(f"[analyzer]   job-mode: querying {owner}/{repo} run {run_id} ...")
-    try:
-        jobs = fetch_jobs_via_api(owner, repo, run_id, token)
-    except urllib.error.HTTPError as e:
-        print(f"[analyzer]   WARN: GitHub API HTTP {e.code} for {owner}/{repo}/{run_id}: {e.reason}")
-        return None
-    except Exception as e:
-        print(f"[analyzer]   WARN: GitHub API call failed: {e}")
-        return None
+    print(f"[analyzer]   job-mode: {owner}/{repo} run {run_id}")
+    # 1) 优先本地缓存 (downloader 已 fetch 过)
+    jobs = load_jobs_from_cache(run_dir)
+    # 2) 没有缓存再调 API
+    if jobs is None:
+        print(f"[analyzer]   no jobs.json cache, querying GitHub API ...")
+        try:
+            jobs = fetch_jobs_via_api(owner, repo, run_id, token)
+        except urllib.error.HTTPError as e:
+            print(f"[analyzer]   WARN: GitHub API HTTP {e.code} for {owner}/{repo}/{run_id}: {e.reason}")
+            return None
+        except Exception as e:
+            print(f"[analyzer]   WARN: GitHub API call failed: {e}")
+            return None
 
     # 过滤掉非测试收尾类 job (finish / finalize / complete 之类)
     excluded_names = {"finish", "finalize", "complete", "post-run", "setup", "teardown"}
