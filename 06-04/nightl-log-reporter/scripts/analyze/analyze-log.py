@@ -352,6 +352,9 @@ def fetch_jobs_via_api(owner, repo, run_id, token):
     """GET /repos/{owner}/{repo}/actions/runs/{run_id}/jobs (分页) -> [job dict]."""
     jobs = []
     page = 1
+    # 走 Windows 系统代理, 与 PowerShell 的 Invoke-WebRequest 行为一致
+    # (urllib 默认不读 WinHTTP/IE 代理, 这里显式建一个空 handler 让它读)
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler())
     while True:
         url = f"https://api.github.com/repos/{owner}/{repo}/actions/runs/{run_id}/jobs?per_page=100&page={page}"
         req = urllib.request.Request(url, headers={
@@ -359,7 +362,7 @@ def fetch_jobs_via_api(owner, repo, run_id, token):
             "Accept": "application/vnd.github.v3+json",
             "User-Agent": "nightl-log-reporter",
         })
-        with urllib.request.urlopen(req, timeout=60) as resp:
+        with opener.open(req, timeout=60) as resp:
             data = json.loads(resp.read().decode("utf-8"))
         jobs.extend(data.get("jobs", []))
         if len(data.get("jobs", [])) < 100:
