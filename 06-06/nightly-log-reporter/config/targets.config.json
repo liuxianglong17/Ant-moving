@@ -1,0 +1,49 @@
+{
+  "_comment": "多 target 配置。run_all 会按顺序对每个 target 执行 find+download, analyze 一次性扫所有 target 产物。",
+  "_example": "每个 target 一项, 字段含义与 finder.config.json / downloader.config.json 一致; outputs 子目录为 outputs/<MM-DD>/<target_name>/。",
+  "analyzer_note": "target.analyzer.mode = case (默认, sglang nightly 用) 或 job (sgl-kernel-npu daily-build 用, 按 job 状态统计).",
+  "targets": [
+    {
+      "name": "sglang-npu",
+      "label": "sglang",
+      "finder": {
+        "workflow_url": "https://github.com/sgl-project/sglang/actions/workflows/nightly-test-npu.yml",
+        "branch": "main",
+        "event": "schedule",
+        "date": "",
+        "start_date": "",
+        "end_date": "",
+        "max_pages": 5
+      },
+      "downloader": {
+        "repo": "sgl-project/sglang",
+        "timeout_sec": 300,
+        "max_retries": 3
+      },
+      "analyzer": {
+        "mode": "case"
+      }
+    },
+    {
+      "name": "sgl-kernel-npu",
+      "label": "kernel",
+      "finder": {
+        "workflow_url": "https://github.com/sgl-project/sgl-kernel-npu/actions/workflows/daily-build-test.yml",
+        "branch": "main",
+        "event": "schedule",
+        "date": "",
+        "start_date": "",
+        "end_date": "",
+        "max_pages": 5
+      },
+      "downloader": {
+        "repo": "sgl-project/sgl-kernel-npu",
+        "timeout_sec": 300,
+        "max_retries": 3
+      },
+      "analyzer": {
+        "mode": "job"
+      }
+    }
+  ]
+}

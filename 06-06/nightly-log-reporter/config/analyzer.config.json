@@ -1,0 +1,7 @@
+{
+  "_comment": "analyze-log.py + classify-errors.py 的配置。",
+  "context_lines_before": 5,
+  "context_lines_after": 25,
+  "detailed_context_lines": 15,
+  "languages": ["en", "zh"]
+}

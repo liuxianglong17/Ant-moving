@@ -1,0 +1,5 @@
+{
+    "schedule_mode": "daily",
+    "trigger_time": "2026-06-05T12:00:00",
+    "job_config_path": "d:\\personal_code\\temp\\schedule\\job_config.json"
+}

@@ -1,0 +1,6 @@
+{
+  "_comment": "download-log.ps1 的配置。",
+  "repo": "sgl-project/sglang",
+  "timeout_sec": 300,
+  "max_retries": 3
+}
